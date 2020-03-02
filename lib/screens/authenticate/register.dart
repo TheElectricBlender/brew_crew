@@ -2,8 +2,8 @@ import 'package:brew_crew/services/auth.dart';
 import 'package:flutter/material.dart';
 
 class Register extends StatefulWidget {
-
   final Function toggleView;
+
   Register({this.toggleView});
 
   @override
@@ -11,11 +11,13 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
-
   final AuthService _auth = AuthService();
+  final _formKey = GlobalKey<FormState>();
+
   // text field state
   String email = '';
   String password = '';
+  String error = '';
 
   @override
   Widget build(BuildContext context) {
@@ -37,23 +39,25 @@ class _RegisterState extends State<Register> {
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
         child: Form(
+          key: _formKey,
           child: Column(
             children: <Widget>[
               SizedBox(height: 20),
               TextFormField(
+                validator: (val) => val.isEmpty ? 'Enter an email' : null,
                 onChanged: (val) {
                   setState(() {
                     email = val;
-                    print(email);
                   });
                 },
               ),
               SizedBox(height: 20),
               TextFormField(
+                validator: (val) =>
+                    val.length < 6 ? 'Enter a password 6+ chars long' : null,
                 obscureText: true,
                 onChanged: (val) {
                   password = val;
-                  print(password);
                 },
               ),
               SizedBox(height: 20),
@@ -61,13 +65,27 @@ class _RegisterState extends State<Register> {
                 color: Colors.pink[400],
                 child: Text(
                   'Register',
-                  style: TextStyle(
-                      color: Colors.white
-                  ),
+                  style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () async {
-
+                  if (_formKey.currentState.validate()) {
+                    dynamic result = await _auth.registerWithEmailAndPassword(
+                        email, password);
+                    if (result == null) {
+                      setState(() {
+                        error = 'please supply valid email';
+                      });
+                    }
+                  }
                 },
+              ),
+              SizedBox(height: 12),
+              Text(
+                  error,
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 14.0,
+                ),
               )
             ],
           ),
