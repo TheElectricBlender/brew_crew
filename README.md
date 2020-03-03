@@ -1,5 +1,7 @@
 # brew_crew
 
+StreamBuilder is a substitute for Providers
+
 A new Flutter project.
 
 ## Getting Started
