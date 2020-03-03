@@ -14,12 +14,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     // to show bottom sheet
     void _showSettingsPanel() {
-      showModalBottomSheet(context: context, builder: (context) {
-        return Container(
-          padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 60.0),
-          child: SettingsForm(),
-        );
-      });
+      showModalBottomSheet(
+          context: context,
+          builder: (context) {
+            return Container(
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 60.0),
+              child: SettingsForm(),
+            );
+          });
     }
 
     return StreamProvider<List<Brew>>.value(
@@ -45,7 +47,15 @@ class Home extends StatelessWidget {
                 label: Text('settings'))
           ],
         ),
-        body: BrewList(),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/coffee_bg.png'),
+              fit: BoxFit.cover,
+            )
+          ),
+            child: BrewList(),
+        ),
       ),
     );
   }
