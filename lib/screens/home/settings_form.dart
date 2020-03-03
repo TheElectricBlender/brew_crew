@@ -29,33 +29,33 @@ class _SettingsFormState extends State<SettingsForm> {
           SizedBox(height: 20.0),
           TextFormField(
             decoration: textInputDecoration,
-            validator: (val) {
-              val.isEmpty ? 'Please enter a name' : null;
-            },
-            onChanged: (val) {
-              setState(() {
-                _currentName = val;
-              });
-            },
+            validator: (val) => val.isEmpty ? 'Please enter a name' : null,
+            onChanged: (val) => setState(() => _currentName = val),
           ),
           SizedBox(height: 20.0),
           // dropdown
           DropdownButtonFormField(
-            decoration: textInputDecoration,
-            value: _currentSugars ?? '0', // value that is shown in the form field
-            items: sugars.map((sugar) {
-              return DropdownMenuItem(
-                value: sugar, // value the user selects 1, 2, 3, 4
-                child: Text('$sugar sugars'),
-              );
-            }).toList(),
-            onChanged: (val) {
-              setState(() {
-                _currentSugars = val;
-              });
-            },
-          ),
+              decoration: textInputDecoration,
+              value: _currentSugars ?? '0',
+              // value that is shown in the form field
+              items: sugars.map((sugar) {
+                return DropdownMenuItem(
+                  value: sugar, // value the user selects 1, 2, 3, 4
+                  child: Text('$sugar sugars'),
+                );
+              }).toList(),
+              onChanged: (val) => setState(() => _currentSugars = val)),
           // slider
+          Slider(
+            value: (_currentStrength ?? 100).toDouble(),
+            activeColor: Colors.brown[_currentStrength ?? 100],
+            inactiveColor: Colors.brown[_currentStrength ?? 100],
+            min: 100,
+            max: 900,
+            divisions: 8,
+            onChanged: (val) => setState(() => _currentStrength = val.round()),
+          ),
+
           RaisedButton(
             color: Colors.pink[400],
             child: Text(
