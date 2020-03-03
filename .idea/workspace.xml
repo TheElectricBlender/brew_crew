@@ -10,11 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="278b563b-cf1c-469f-869f-5dec94491c2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/models/brew.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/home/brew_list.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/home/brew_tile.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/database.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/database.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home/brew_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home/brew_list.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
