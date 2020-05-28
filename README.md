@@ -6,6 +6,8 @@ A new Flutter project.
 
 ![brew_crew screenshot](https://github.com/TheElectricBlender/brew_crew/blob/master/assets/screenshot.png)
 
+<img src="https://github.com/TheElectricBlender/brew_crew/blob/master/assets/screenshot.png" width="360">
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
