@@ -4,8 +4,6 @@ StreamBuilder is a substitute for Providers
 
 A new Flutter project.
 
-![brew_crew screenshot](https://github.com/TheElectricBlender/brew_crew/blob/master/assets/screenshot.png)
-
 <img src="https://github.com/TheElectricBlender/brew_crew/blob/master/assets/screenshot.png" width="360">
 
 ## Getting Started
