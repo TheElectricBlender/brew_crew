@@ -10,10 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="278b563b-cf1c-469f-869f-5dec94491c2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/coffee_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/coffee_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/services/analytics.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +24,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_XL_API_29" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -41,7 +43,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Dutch/tahoe-dutch-develop (2)/tahoe-dutch-develop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dutch" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -50,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Simon\Documents\Projects\brew_crew\android" />
       <recent name="C:\Users\Simon\Documents\Projects\brew_crew\android\app" />
     </key>
   </component>
